@@ -1,0 +1,41 @@
+label-defect trips excluded from fitting: ['00000033', '00000054']
+
+=== XGBoost
+  fold 0: macroF1=0.9249 top1=0.8814 logloss=0.1024 (17.8s)
+  fold 1: macroF1=0.9460 top1=0.9114 logloss=0.0810 (18.7s)
+  fold 2: macroF1=0.9546 top1=0.9196 logloss=0.0618 (18.1s)
+  fold 3: macroF1=0.9328 top1=0.8692 logloss=0.0965 (17.1s)
+  fold 4: macroF1=0.9515 top1=0.9211 logloss=0.0635 (18.6s)
+  TEST top1=0.9073 macroF1=0.9403 logloss=0.0778 continuity=0.9575 train_top1=0.9442
+
+=== MLP
+  fold 0: macroF1=0.9213 top1=0.8678 logloss=0.1229 (38.0s)
+  fold 1: macroF1=0.9360 top1=0.9011 logloss=0.1010 (37.2s)
+  fold 2: macroF1=0.9467 top1=0.9164 logloss=0.0713 (34.1s)
+  fold 3: macroF1=0.9180 top1=0.8559 logloss=0.1269 (34.4s)
+  fold 4: macroF1=0.9442 top1=0.9156 logloss=0.0723 (32.6s)
+  TEST top1=0.8849 macroF1=0.9291 logloss=0.0959 continuity=0.9568 train_top1=0.9234
+
+=== RandomForest
+  fold 0: macroF1=0.9246 top1=0.8783 logloss=0.1002 (44.2s)
+  fold 1: macroF1=0.9448 top1=0.9102 logloss=0.0852 (51.8s)
+  fold 2: macroF1=0.9553 top1=0.9197 logloss=0.0663 (46.4s)
+  fold 3: macroF1=0.9301 top1=0.8674 logloss=0.0976 (47.1s)
+  fold 4: macroF1=0.9480 top1=0.9173 logloss=0.0660 (49.8s)
+  TEST top1=0.9011 macroF1=0.9362 logloss=0.0816 continuity=0.9543 train_top1=0.9195
+
+=== ExtraTrees
+  fold 0: macroF1=0.9219 top1=0.8736 logloss=0.1026 (14.9s)
+  fold 1: macroF1=0.9427 top1=0.9082 logloss=0.0938 (14.8s)
+  fold 2: macroF1=0.9509 top1=0.9159 logloss=0.0730 (16.0s)
+  fold 3: macroF1=0.9268 top1=0.8620 logloss=0.1030 (14.7s)
+  fold 4: macroF1=0.9462 top1=0.9127 logloss=0.0717 (13.1s)
+  TEST top1=0.8906 macroF1=0.9326 logloss=0.0874 continuity=0.9497 train_top1=0.9034
+
+=== KNN
+  fold 0: macroF1=0.9170 top1=0.8701 logloss=0.1630 (0.1s)
+  fold 1: macroF1=0.9348 top1=0.8971 logloss=0.1350 (0.1s)
+  fold 2: macroF1=0.9449 top1=0.9064 logloss=0.0949 (0.1s)
+  fold 3: macroF1=0.9122 top1=0.8467 logloss=0.1627 (0.1s)
+  fold 4: macroF1=0.9402 top1=0.9051 logloss=0.1078 (0.1s)
+  TEST top1=0.8845 macroF1=0.9290 logloss=0.1290 continuity=0.9427 train_top1=0.9173
