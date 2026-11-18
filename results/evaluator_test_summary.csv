@@ -1,0 +1,2 @@
+trips,gps_points,pooled_accuracy_classifier_only,pooled_accuracy_hmm,mean_route_arc_f1,mean_route_length_f1,mean_route_continuity_hmm,trips_improved_by_hmm,max_prediction_s
+10,19674,0.9111517739148114,0.9529836332215106,0.9346590163419879,0.9794343187320033,0.9611405472512201,6,2.133

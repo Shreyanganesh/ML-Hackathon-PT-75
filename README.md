@@ -33,14 +33,15 @@ scripts/
   05_hmm_decoder.py       decoder tuning, classifier-only vs HMM comparison, maps
   06_plots.py             model comparison figures
   07_capture_figures.py   screenshots of the Folium maps and the UI for the report
-  08_build_report.py      builds the report from the result files
+  08_build_report.py      builds the draft report (HTML, PDF) from the result files
+  09_evaluator_results.py held-out evaluator test results (prediction and scoring only)
 api/main.py               FastAPI server (Laptop 1)
 ui/index.html             evaluator UI (Laptop 2)
 ui/serve_ui.py            serves the UI with the Python standard library
 models/                   final_model_lgbm.txt, final_model.joblib, model_config.json, hmm_config.json
 results/                  every CSV, log and plot produced by the scripts
 maps/                     Folium HTML maps
-report/                   technical report (HTML, PDF) and its figures
+report/                   final project report (PT-075-ProjectReport.pdf)
 config.json               candidate radius, K, feature window, seed, folds
 ```
 
@@ -91,6 +92,12 @@ python scripts/05_hmm_decoder.py ablation # ~3 min, backward-step ablation (resu
 python scripts/06_plots.py                # seconds, comparison figures
 python scripts/07_capture_figures.py      # needs Chrome + API and UI running; report screenshots
 python scripts/08_build_report.py         # report/PathSnap_Technical_Report.html and .pdf
+```
+
+Held-out evaluator results (run once, after everything above; nothing is trained or tuned here):
+
+```
+python scripts/09_evaluator_results.py    # needs PATHSNAP_EVAL_DIR set to the evaluator_test folder
 ```
 
 `01_eda.py` uses the label alignment from step 2 for one plot, so step 2 runs first. A single model can be rerun with `python scripts/03_train_models.py LightGBM`. The trained model files are committed, so the API runs without retraining.
