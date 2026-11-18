@@ -2,9 +2,10 @@
 
 Longitude/latitude are angles, so distances are computed after projecting each
 trip to a local tangent plane (equirectangular projection centred on the trip
-centroid). Within the extent of one trip (a few tens of km) the scale error of
-this projection is far below GPS noise, and it keeps every later computation
-(point-to-segment distance, bearings) in metres.
+centroid). The largest trip extends about 75 km; at that size the east-west
+scale error at the edge is below 1%, i.e. well under a metre on the 5-60 m
+fix-to-arc distances we use. Every later computation (point-to-segment
+distance, bearings) is in metres.
 """
 import numpy as np
 
