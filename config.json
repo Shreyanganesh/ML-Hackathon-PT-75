@@ -1,0 +1,21 @@
+{
+  "seed": 911,
+  "paths": {
+    "data_dir": "data",
+    "train": "train",
+    "student_test": "student_test",
+    "evaluator_test": "evaluator_test"
+  },
+  "candidates": {
+    "radius_m": 60.0,
+    "max_candidates": 8,
+    "bbox_margin_m": 300.0
+  },
+  "features": {
+    "window": 3,
+    "heading_lag": 2,
+    "min_speed_for_heading": 1.0,
+    "emission_sigma_m": 10.0
+  },
+  "cv_folds": 5
+}
