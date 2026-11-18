@@ -1,0 +1,2 @@
+# Laptop 2 (evaluator UI) needs only the Python standard library.
+# Nothing to install. Run: python ui/serve_ui.py --api http://<LAPTOP1_IP>:8000
