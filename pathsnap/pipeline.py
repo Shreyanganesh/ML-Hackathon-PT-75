@@ -23,7 +23,11 @@ class BoosterModel:
 
     def __init__(self, path):
         import lightgbm as lgb
-        self.booster = lgb.Booster(model_file=str(path))
+        # Read the text ourselves and drop Windows line endings: git on Windows can
+        # convert this file to CRLF on checkout, which LightGBM's parser rejects.
+        with open(path, "rb") as f:
+            text = f.read().decode("utf-8").replace("\r\n", "\n").replace("\r", "\n")
+        self.booster = lgb.Booster(model_str=text)
 
     def predict_proba(self, X):
         p = self.booster.predict(X)

@@ -1,0 +1,3 @@
+models/*.txt -text
+*.joblib binary
+*.png binary
