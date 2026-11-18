@@ -1,0 +1,60 @@
+{
+  "sampler": "TPE",
+  "n_trials": 30,
+  "objective": "mean Top-1 accuracy, 3-fold GroupKFold",
+  "space": {
+    "n_estimators": [
+      "int",
+      150,
+      900
+    ],
+    "learning_rate": [
+      "float_log",
+      0.01,
+      0.2
+    ],
+    "num_leaves": [
+      "int_log",
+      15,
+      255
+    ],
+    "min_child_samples": [
+      "int_log",
+      10,
+      300
+    ],
+    "subsample": [
+      "float",
+      0.5,
+      1.0
+    ],
+    "colsample_bytree": [
+      "float",
+      0.4,
+      1.0
+    ],
+    "reg_lambda": [
+      "float_log",
+      0.001,
+      20.0
+    ],
+    "reg_alpha": [
+      "float_log",
+      0.001,
+      10.0
+    ]
+  },
+  "seed": 911,
+  "search_seconds": 1185.3554463386536,
+  "best_value": 0.90033971529865,
+  "best_params": {
+    "n_estimators": 389,
+    "learning_rate": 0.039291491227016515,
+    "num_leaves": 233,
+    "min_child_samples": 32,
+    "subsample": 0.8482033987024631,
+    "colsample_bytree": 0.8488140609521097,
+    "reg_lambda": 0.006374105214767606,
+    "reg_alpha": 0.13392278691409149
+  }
+}
