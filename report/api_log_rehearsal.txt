@@ -1,0 +1,23 @@
+06:45:56 | INFO | model loaded: LightGBM (LGBMClassifier)
+06:45:56 | INFO | HMM params: {'w_clf': 0.6583418377321836, 'sigma': 4.42202517539632, 'beta': 1.1756245387011492, 'beta_gap_power': 0.22786136787829248, 'back_tol': 39.672302654942946, 'search_extra': 400.0}
+06:45:56 | INFO | evaluation folder: data/student_test (10 trips: 00000000, 00000007, 00000009, 00000040, 00000052, 00000056, 00000065, 00000076, 00000077, 00000091)
+06:46:01 | INFO | REQUEST predict trip=00000000 from 127.0.0.1
+06:46:02 | INFO | RESULT trip=00000000 points=2503 point_acc=0.9668 (classifier-only 0.9561) route_F1=0.9390 length_F1=0.9943 continuity=0.9952 time=0.82s
+06:46:02 | INFO | REQUEST predict trip=00000007 from 127.0.0.1
+06:46:02 | INFO | RESULT trip=00000007 points=1354 point_acc=1.0000 (classifier-only 0.9461) route_F1=0.9918 length_F1=0.9965 continuity=1.0000 time=0.29s
+06:46:02 | INFO | REQUEST predict trip=00000009 from 127.0.0.1
+06:46:03 | INFO | RESULT trip=00000009 points=1049 point_acc=0.8999 (classifier-only 0.8885) route_F1=0.9142 length_F1=0.9534 continuity=0.9370 time=0.53s
+06:46:03 | INFO | REQUEST predict trip=00000040 from 127.0.0.1
+06:46:04 | INFO | RESULT trip=00000040 points=2995 point_acc=0.9546 (classifier-only 0.9439) route_F1=0.9952 length_F1=0.9985 continuity=0.9963 time=0.95s
+06:46:04 | INFO | REQUEST predict trip=00000052 from 127.0.0.1
+06:46:04 | INFO | RESULT trip=00000052 points=262 point_acc=1.0000 (classifier-only 0.9885) route_F1=0.9894 length_F1=0.9984 continuity=0.9655 time=0.11s
+06:46:04 | INFO | REQUEST predict trip=00000056 from 127.0.0.1
+06:46:06 | INFO | RESULT trip=00000056 points=3958 point_acc=0.9588 (classifier-only 0.9229) route_F1=0.9635 length_F1=0.9756 continuity=0.9666 time=2.09s
+06:46:06 | INFO | REQUEST predict trip=00000065 from 127.0.0.1
+06:46:06 | INFO | RESULT trip=00000065 points=768 point_acc=0.8451 (classifier-only 0.8763) route_F1=0.8869 length_F1=0.8630 continuity=0.9804 time=0.41s
+06:46:06 | INFO | REQUEST predict trip=00000076 from 127.0.0.1
+06:46:08 | INFO | RESULT trip=00000076 points=1486 point_acc=0.9637 (classifier-only 0.9320) route_F1=0.9296 length_F1=0.9730 continuity=0.9677 time=1.32s
+06:46:08 | INFO | REQUEST predict trip=00000077 from 127.0.0.1
+06:46:10 | INFO | RESULT trip=00000077 points=3911 point_acc=0.8658 (classifier-only 0.8001) route_F1=0.9420 length_F1=0.9786 continuity=0.9928 time=1.72s
+06:46:10 | INFO | REQUEST predict trip=00000091 from 127.0.0.1
+06:46:10 | INFO | RESULT trip=00000091 points=874 point_acc=0.9542 (classifier-only 0.9130) route_F1=0.9935 length_F1=0.9950 continuity=0.9714 time=0.46s
